@@ -1,0 +1,243 @@
+/* Global Styles */
+
+/* * {
+  font-family: 'Roboto', Arial, sans-serif;
+  color: #616161;
+  box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+} */
+
+/* body {
+  margin: 0;
+}
+
+.container {
+  display: flex;
+  flex-direction: row;
+}
+
+router-outlet + *  {
+  padding: 0 16px;
+} */
+
+/* Text */
+
+/* h1 {
+  font-size: 32px;
+}
+
+h2 {
+  font-size: 20px;
+}
+
+h1, h2 {
+  font-weight: lighter;
+}
+
+p {
+  font-size: 14px;
+} */
+
+/* Hyperlink */
+
+/* a {
+  cursor: pointer;
+  color: #1976d2;
+  text-decoration: none;
+}
+
+a:hover {
+  opacity: 0.8;
+} */
+
+/* Input */
+
+/* input {
+  font-size: 14px;
+  border-radius: 2px;
+  padding: 8px;
+  margin-bottom: 16px;
+  border: 1px solid #BDBDBD;
+} */
+
+/* label {
+  font-size: 12px;
+  font-weight: bold;
+  margin-bottom: 4px;
+  display: block;
+  text-transform: uppercase;
+} */
+
+/* Button */
+/* .button, button {
+  display: inline-flex;
+  align-items: center;
+  padding: 8px 16px;
+  border-radius: 2px;
+  font-size: 14px;
+  cursor: pointer;
+  background-color: #1976d2;
+  color: white;
+  border: none;
+} */
+
+/* .button:hover, button:hover {
+  opacity: 0.8;
+  font-weight: normal;
+}
+
+.button:disabled, button:disabled {
+  opacity: 0.5;
+  cursor: auto;
+} */
+
+/* Fancy Button */
+
+/* .fancy-button {
+  background-color: white;
+  color: #1976d2;
+} */
+
+/* .fancy-button i.material-icons {
+  color: #1976d2;
+  padding-right: 4px;
+} */
+
+/* Top Bar */
+
+/* app-top-bar {
+  width: 100%;
+  height: 68px;
+  background-color: #1976d2;
+  padding: 16px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+app-top-bar h1 {
+  color: white;
+  margin: 0;
+} */
+
+/* Checkout Cart, Shipping Prices */
+
+/* .cart-item, .shipping-item {
+  width: 100%;
+  min-width: 400px;
+  max-width: 450px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 16px 32px;
+  margin-bottom: 8px;
+  border-radius: 2px;
+  background-color: #EEEEEE;
+} */
+*{
+  font-family : Verdana, Arial, Sans-Serif;
+}
+.k-grid-header th.k-header {
+  font-family: Verdana, Arial, Sans-Serif;
+  font-size: 12px;
+  font-weight: bold;
+  color: #424242;
+  background:linear-gradient(to bottom, #afd9d8 50%, #79c1c0 50%);;  
+}
+
+.k-grid tr.k-alt{
+  font-family: Verdana,Arial,sans-serif;;
+  font-size: 12px;
+  font-weight: bold;
+  color: #424242;
+  background:linear-gradient(to bottom, #afd9d8 50%, #79c1c0 50%);
+  pointer-events: none;  
+}
+.k-toolbar{
+  background: #e0eff1;
+}
+.k-tabstrip-items .k-link{
+  color: black;    
+}
+
+.k-tabstrip-content.k-state-active, .k-tabstrip-content.k-active, .k-tabstrip > .k-content.k-state-active, .k-tabstrip > .k-content.k-active {
+  display: block;
+  background: #e0eff1;
+  height: 440px;
+  border-color: cornflowerblue;
+    
+}
+.k-grid-content tr:last-child > td, .k-grid-content-locked tr:last-child > td{
+  font-family: Verdana,Arial,sans-serif;
+  color: #424242;
+  background-color:azure;
+  font-size: 14px;
+  font-weight: normal;    
+}
+body{
+  background-color: #e0eff1;
+  font-family: Verdana,Arial,sans-serif;     
+}
+.k-grid table {
+  margin: 0;
+  width: 100%;
+  max-width: none;
+  border-width: 0;
+  border-color: inherit;
+  border-collapse: separate;
+  border-spacing: 1.5px;
+  empty-cells: show;
+  outline: 0;  
+}
+.k-tabstrip-items-wrapper .k-item.k-active{
+  background: cadetblue;
+  font-weight: bold;
+}
+.k-grid tbody{
+  background: lavender;   
+}
+.header{
+  font-weight: bold;
+  font-size: 15px;
+  margin-top: 0%;
+  margin-left: 5px;
+  word-spacing: 2px;
+}
+.check{
+  font-size: 15px;
+}
+.detailed-list{
+  display: flex;
+}
+.prescription{
+  margin-left: 20px;
+}
+.list{
+  margin-top: 1%;
+  font-size: 13px;
+}    
+
+ol li::marker {
+  content: "▶";
+  color: darkcyan; 
+}
+
+a{
+  text-decoration: none;
+  color: black;
+}
+.k-grid{
+  border-color: black;
+}
+.k-grid-content {
+  background-color: azure;
+}
+.k-grid-header .k-header:hover {
+  position: relative;
+  vertical-align: bottom;
+  cursor: default;
+  background: #287b7f;
+}
+

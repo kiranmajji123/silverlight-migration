@@ -1,0 +1,72 @@
+<!-- <div class="header">
+    <p>Inpatient Encounter - Start date : 19-Sep-2020 - ENT - elavarasi - Open</p>
+   </div>
+  
+   <div class="check" style="margin-left: 82%">
+       <input type="checkbox" #notification kendoCheckBox  kendoTooltip [title]="'Include cancelled items'" position="bottom"/>
+      <kendo-label
+        class="k-checkbox-label"
+        [for]="notification"
+        text="Include cancelled items" kendoTooltip [title]="'Include cancelled items'" position="bottom">
+      </kendo-label>
+    </div>
+      <br>
+    <div class="check" style="margin-left: 71%">
+       <input type="checkbox" #notification kendoCheckBox kendoTooltip [title]="'Include ALL completed / discontinued items'" position="bottom"/>
+      <kendo-label
+        class="k-checkbox-label"
+        [for]="notification"
+        text="Include ALL completed / discontinued items" kendoTooltip [title]="'Include ALL completed / discontinued items'" position="bottom">
+      </kendo-label>
+    </div>
+    <br> -->
+<kendo-grid  [height]="280">
+    <kendo-grid-column-group>
+      <ng-template kendoGridHeaderTemplate let-column let-columnIndex="columnIndex">
+        <span><img style="height: 20px" src="../../../assets/icopyacrossnor24.png"></span>
+       </ng-template>
+      <kendo-grid-column [width]="20">
+       <ng-template kendoGridCellTemplate let-column let-dataItem>
+        <span *ngIf="dataItem.Discontinued"><img style="height: 20px" src="https://www.downloadclipart.net/medium/48772-green-right-arrow-images.png"></span>
+       </ng-template>
+      </kendo-grid-column>
+    </kendo-grid-column-group>
+    <kendo-grid-column-group>
+        <ng-template  kendoGridHeaderTemplate let-column let-columnIndex="columnIndex">
+          <span><img style="height: 20px;" src="../../../assets/istatusdetailsnor16.png"></span>
+        </ng-template>
+      <kendo-grid-column [width]="20">
+      </kendo-grid-column>
+    </kendo-grid-column-group>
+    <kendo-grid-column-group>
+        <ng-template kendoGridHeaderTemplate let-column let-columnIndex="columnIndex">
+          <span><img style="height: 20px;" src="../../../assets/ipatientmedicationhot16.png"></span>
+        </ng-template>
+      <kendo-grid-column [width]="20">
+        <ng-template kendoGridCellTemplate let-column let-dataItem>
+          <span *ngIf="dataItem.Discontinued"><img style="height: 20px;" src="https://cdn-icons-png.flaticon.com/512/527/527055.png"></span>
+        </ng-template>
+      </kendo-grid-column>
+    </kendo-grid-column-group>
+    <kendo-grid-column-group title="Prescription item"  [width]="350"  [locked]="false">
+      <kendo-grid-column field="" title="REGULAR" [width]="350" [locked]="false">
+      </kendo-grid-column>
+    </kendo-grid-column-group>
+    <kendo-grid-column-group title="Other information" [width]="200" [locked]="false">
+      <kendo-grid-column  field=""title=""  [width]="200" [locked]="false">
+        <ng-template kendoGridCellTemplate let-column let-dataItem>
+          <span>{{dataItem.Otherinformation}}</span>
+          <span *ngIf="dataItem.Prescriptionitem!='REGULAR'"></span>
+          &nbsp;<span *ngIf="dataItem.icon"><img style="height: 20px;" src="https://cdn-icons.flaticon.com/png/512/3470/premium/3470158.png?token=exp=1659366216~hmac=b7cf34b699fb1b68a247db30a5d31994"></span>
+        </ng-template>
+      </kendo-grid-column>
+    </kendo-grid-column-group>
+    <kendo-grid-column-group title="Start date" [width]="100" [locked]="false">
+      <kendo-grid-column field="" title="" [width]="100" [locked]="false">
+      </kendo-grid-column>
+    </kendo-grid-column-group>
+    <kendo-grid-column-group title="" [width]="100" [locked]="false">
+      <kendo-grid-column field="" title="" [width]="100" [locked]="false">
+      </kendo-grid-column>
+    </kendo-grid-column-group> 
+  </kendo-grid>   

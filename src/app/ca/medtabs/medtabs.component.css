@@ -1,0 +1,110 @@
+*{
+    font-family : Verdana, Arial, Sans-Serif;
+}
+.k-grid-header th.k-header {
+    font-family: Verdana, Arial, Sans-Serif;
+    font-size: 12px;
+    font-weight: bold;
+    color: #424242;
+    background:linear-gradient(to bottom, #afd9d8 50%, #79c1c0 50%);;  
+}
+
+.k-grid tr.k-alt{
+    font-family: Verdana,Arial,sans-serif;;
+    font-size: 12px;
+    font-weight: bold;
+    color: #424242;
+    background:linear-gradient(to bottom, #afd9d8 50%, #79c1c0 50%);
+    pointer-events: none;  
+}
+.k-toolbar{
+    background: #e0eff1;
+}
+.k-tabstrip-items .k-link{
+    color: black;    
+}
+.k-checkbox:checked, .k-checkbox.k-checked{
+    border-color:white ;
+    background-color:#79c1c0;
+}
+.k-checkbox{
+    color: #79c1c0;
+}
+.k-tabstrip-content.k-state-active, .k-tabstrip-content.k-active, .k-tabstrip > .k-content.k-state-active, .k-tabstrip > .k-content.k-active {
+    display: block;
+    background: #e0eff1;
+    height: 455px;
+      
+}
+.k-grid-content tr:last-child > td, .k-grid-content-locked tr:last-child > td{
+    font-family: Verdana,Arial,sans-serif;
+    color: #424242;
+    background-color:azure;
+    font-size: 14px;
+    font-weight: normal;    
+}
+body{
+    background-color: #afd9d8;
+    font-family: Verdana,Arial,sans-serif;     
+}
+.k-grid table {
+    margin: 0;
+    width: 100%;
+    max-width: none;
+    border-width: 0;
+    border-color: inherit;
+    border-collapse: separate;
+    border-spacing: 1.5px;
+    empty-cells: show;
+    outline: 0;  
+}
+.k-breadcrumb-link {
+    color: black;
+}
+.k-breadcrumb{
+    background-color: #e0eff1;
+}
+.k-tabstrip-items-wrapper .k-item.k-state-active{
+    background-color: cadetblue;
+    font-weight: bold;
+}
+.k-grid tbody{
+    background: lavender;   
+}
+.header{
+    font-weight: bold;
+    font-size: 15px;
+    margin-top: 0%;
+}
+.check{
+    font-size: 15px;
+}
+.detailed-list{
+    display: flex;
+}
+.prescription{
+    margin-left: 20px;
+}
+.list{
+    margin-top: 1%;
+    font-size: 13px;
+}    
+.k-grid{
+    border-color: black;
+}
+
+ol li::marker {
+    content: "▶";
+    color: darkcyan; 
+  }
+  
+  a{
+    text-decoration: none;
+    color: black;
+}
+.k-grid{
+    border-color: black;
+}
+.k-grid-header .k-header:hover {
+    background-color: #287b7f;
+  }
